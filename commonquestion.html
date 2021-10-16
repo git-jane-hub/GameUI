@@ -63,7 +63,12 @@
               </h2>
             </div>
             <div class="contents-main">
-              <h4 class="topic">
+              <h4
+                class="topic"
+                onclick="openDetail(0)"
+                onmouseover="fadeIn(0)"
+                onmouseout="fadeIn(0)"
+              >
                 <i class="fas fa-chevron-right"></i>
                 Gamma에서는 어떤 종류의 게임을 다운로드하여 플레이할 수 있나요?
               </h4>
@@ -74,7 +79,12 @@
                 여기에는 언제나 모두가 찾는 무언가가 있습니다. 왼쪽에 있는 검색
                 탭을 눌러 어떤 게임이 있는지 알아보세요.
               </p>
-              <h4 class="topic">
+              <h4
+                class="topic"
+                onclick="openDetail(1)"
+                onmouseover="fadeIn(1)"
+                onmouseout="fadeIn(1)"
+              >
                 <i class="fas fa-chevron-right"></i>
                 Gamma는 어떤 운영체제에서 사용할 수 있나요?
               </h4>
@@ -82,7 +92,12 @@
                 Gamma는 모든 운영체제에서 이용할 수 있습니다. 한 플랫폼에서
                 게임을 구매하면 자동으로 다른 플랫폼에서도 플레이할 수 있습니다.
               </p>
-              <h4 class="topic">
+              <h4
+                class="topic"
+                onclick="openDetail(2)"
+                onmouseover="fadeIn(2)"
+                onmouseout="fadeIn(2)"
+              >
                 <i class="fas fa-chevron-right"></i>
                 Gamma 계정을 만드려면 어떻게 해야 하나요?
               </h4>
@@ -91,7 +106,12 @@
                 <a href="">여기</a>로 이동해 계정을 만들고 게임을
                 플레이해보세요.
               </p>
-              <h4 class="topic">
+              <h4
+                class="topic"
+                onclick="openDetail(3)"
+                onmouseover="fadeIn(3)"
+                onmouseout="fadeIn(3)"
+              >
                 <i class="fas fa-chevron-right"></i>
                 Gamma에서 구입한 게임을 반품할 수 있나요?
               </h4>
@@ -101,7 +121,12 @@
                 <a href="#">여기</a>로 이동해 직접 문의해주세요. 게임 보증
                 정책에 참여하는 게임에 한해서는 전액 환불받을 수 있습니다.
               </p>
-              <h4 class="topic">
+              <h4
+                class="topic"
+                onclick="openDetail(4)"
+                onmouseover="fadeIn(4)"
+                onmouseout="fadeIn(4)"
+              >
                 <i class="fas fa-chevron-right"></i>
                 오프라인 상태에서 Gamma를 이용해 게임을 할 수 있나요?
               </h4>
@@ -152,19 +177,21 @@
         para[num].classList.add("hidden");
       }
 
-      function openDetail() {
-        title[1].classList.toggle("black");
-        para[1].classList.toggle("hidden");
-        if (right[1].classList.contains("fa-chevron-right")) {
-          right[1].classList.remove("fa-chevron-right");
-          right[1].classList.add("fa-chevron-down");
+      let no;
+      function openDetail(no) {
+        title[no].classList.toggle("black");
+        title[no].classList.toggle("select");
+        para[no].classList.toggle("hidden");
+        if (right[no].classList.contains("fa-chevron-right")) {
+          right[no].classList.remove("fa-chevron-right");
+          right[no].classList.add("fa-chevron-down");
         } else {
-          right[1].classList.remove("fa-chevron-down");
-          right[1].classList.add("fa-chevron-right");
+          right[no].classList.remove("fa-chevron-down");
+          right[no].classList.add("fa-chevron-right");
         }
       }
-      function fadeIn() {
-        right[1].classList.toggle("hover");
+      function fadeIn(no) {
+        right[no].classList.toggle("hover");
       }
       title[1].addEventListener("click", openDetail);
       title[1].addEventListener("mouseover", fadeIn);

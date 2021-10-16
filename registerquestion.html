@@ -57,9 +57,8 @@
               <table class="register-table">
                 <tr>
                   <!-- 유형: 계정 및 내정보, 소프트웨어 및 게임, 라이브러리, 구매, 친구, 채팅, 어플리케이션, 기타 -->
-
                   <th class="regi-header">문의 유형</th>
-                  <td>
+                  <td class="regi-content">
                     <select name="qtype" required>
                       <option value="" disabled selected>
                         -- 유형을 선택하세요 --
@@ -77,7 +76,7 @@
                 </tr>
                 <tr>
                   <th class="regi-header">작성자</th>
-                  <td>
+                  <td class="regi-content">
                     <input
                       type="text"
                       name="qwriter"
@@ -87,7 +86,7 @@
                 </tr>
                 <tr>
                   <th class="regi-header">문의 제목</th>
-                  <td>
+                  <td class="regi-content">
                     <input
                       type="text"
                       name="qtitle"
@@ -97,9 +96,9 @@
                 </tr>
                 <tr>
                   <th class="regi-header">문의 내용</th>
-                  <td>
+                  <td class="regi-content">
                     <textarea
-                      rows="10"
+                      rows="20"
                       cols="50"
                       name="qcontent"
                       placeholder="내용을 입력해주세요"
@@ -134,5 +133,13 @@
       src="https://kit.fontawesome.com/62b1f47417.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const cancelBtn = document.querySelector(".cancelBtn");
+      function stopBtnnMove(evt) {
+        evt.preventDefault();
+        location.href = "http://127.0.0.1:5500/questionlist2.html";
+      }
+      cancelBtn.addEventListener("click", stopBtnnMove);
+    </script>
   </body>
 </html>

@@ -9,6 +9,7 @@
 @import "./screen/questionlist.css";
 @import "./screen/questionlist2.css";
 @import "./screen/registerquestion.css";
+@import "./screen/getquestion.css";
 
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");

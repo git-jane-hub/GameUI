@@ -1,3 +1,6 @@
+.detail {
+  font-size: 17px;
+}
 .form-header {
   color: rgba(0, 0, 0, 0.8);
   font-size: 27px;
@@ -6,20 +9,63 @@
   border-bottom: 3px solid rgba(0, 0, 0, 0.8);
   margin-bottom: 30px;
 }
-.form-each {
-  display: flex;
+.register-table {
+  margin: 0 auto;
+}
+.regi-header,
+.regi-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.regi-header {
+  color: black;
+  text-align: start;
+  padding-right: 80px;
+}
+.regi-content {
+  padding: 20px 30px;
+}
+.regi-content select {
+  height: 33px;
+  width: 102%;
+}
+.regi-content input {
+  height: 33px;
+  width: 100%;
+}
+.regi-content input[type="text"]::placeholder,
+.regi-content textarea::placeholder {
+  padding-left: 5px;
+  font-size: 17px;
+}
+.regi-content textarea::placeholder {
+  padding-top: 5px;
+}
+.regi-content textarea {
+  resize: vertical;
 }
 .submitBtn {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
+  justify-content: center;
+  margin: 30px 0;
 }
 .submitBtn input[type="submit"] {
   border: none;
-  color: inherit;
   font-size: 17px;
+  padding: 0;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.submitBtn button {
-  color: inherit;
+.cancelBtn {
+  color: black;
   font-size: 17px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  cursor: pointer;
 }
