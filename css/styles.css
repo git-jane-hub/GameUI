@@ -4,6 +4,12 @@
 /* component */
 @import "./screen/component/main.css";
 
+/* screen */
+@import "./screen/commonquestion.css";
+@import "./screen/questionlist.css";
+@import "./screen/questionlist2.css";
+@import "./screen/registerquestion.css";
+
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 body {

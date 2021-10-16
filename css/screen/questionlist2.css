@@ -1,0 +1,16 @@
+.emptyquestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+.emptyquestion i {
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+.emptyquestion h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: 700;
+}

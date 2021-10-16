@@ -126,6 +126,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 form input:focus {
   outline: none;
 }
