@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/62b1f47417.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="display">
+      <!-- side-bar -->
+      <div class="side-bar">
+        <!-- logo -->
+        <div class="side-bar__row">
+          <!-- 클릭하면 main화면으로 돌아오도록 a 태그 수정 -->
+          <span
+            ><a href="#"><img src="/logo.png" /></a
+          ></span>
+        </div>
+        <!-- search -->
+        <div class="side-bar__row">
+          <form action="#" method="get">
+            <input type="text" placeholder="   Search Game" />
+            <!-- origin처럼 버튼 숨겼음, enter 치면 검색됨 -->
+            <input type="submit" value="" />
+          </form>
+        </div>
+        <!-- category -->
+        <div class="side-bar__row">
+          <span><a href="#">게임 스토어</a></span>
+          <span><a href="#">라이브러리</a></span>
+        </div>
+        <!-- qna -->
+        <div class="side-bar__row">
+          <span><a href="#">Q&A</a></span>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span><a href="#">자주하는 질문</a></span>
+        </div>
+        <!-- about user -->
+        <div class="side-bar__row">
+          <!-- c:if로 로그인 전에는 회원가입+로그인 / 로그인 후에는 프로필 -->
+          <span><a href="#">로그인</a></span>
+          <span><a href="#">가입하기</a></span>
+          <!--
+          <span>
+            <a href="#"><button class="profile">Profile</button></a>
+          </span>
+          -->
+        </div>
+      </div>
+      <div class="main">
+        <div class="contents">
+          <div class="detail">
+            <div>
+              <i class="fas fa-exclamation-triangle"></i>
+              <h1>요청하신 페이지에 접근권한이 없습니다.</h1>
+              <p>연결하려는 페이지에 접근권한이 없어 접근이 거부되었습니다.</p>
+              <p>서비스 이용에 불편을 드려 죄송합니다.</p>
+            </div>
+            <div>
+              <a href="#" onClick="history.back()"
+                ><button>&nbsp;&#60;&nbsp;이전페이지</button></a
+              >
+              <a href="/main/main"><button>홈으로</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-info">
+            <div>CREATORS&nbsp;&nbsp;김영훈, 김지우, 조훈현, 최재인</div>
+            <div>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+            <div>
+              CONTACT&nbsp;&nbsp;<a href="https://github.com/GITJIWOO"
+                >https://github.com/GITJIWOO</a
+              >
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div>Copyright © GAMMA All right reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

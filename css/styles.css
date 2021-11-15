@@ -13,6 +13,7 @@
 @import "./screen/searchfriends.css";
 @import "./screen/followinglist.css";
 @import "./screen/followerlist.css";
+@import "./screen/accessError.css";
 
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
